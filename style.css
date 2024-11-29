@@ -1,0 +1,67 @@
+body {
+    background-color: #1a1a1a; /* Темный фон */
+    color: #ff4d4d; /* Красный цвет шрифта */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.question {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Позволяет кнопкам обертываться на маленьких экранах */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff4d4d; /* Цвет кнопок */
+    color: #fff; /* Белый цвет текста кнопок */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e60000; /* Более темный оттенок при наведении */
+}
+
+#additional-content {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Адаптивные стили для планшетов и меньших устройств */
+@media (max-width: 1024px) {
+    .question {
+        font-size: 20px; /* Уменьшаем размер текста на планшетах */
+    }
+
+    button {
+        padding: 8px 16px; /* Уменьшаем размер кнопок на планшетах */
+        font-size: 14px; /* Уменьшаем шрифт кнопок для более удобного размещения */
+    }
+
+    body {
+        padding: 20px; /* Добавляем отступы, чтобы элементы не прилегали к краям экрана */
+    }
+}
+
+canvas {
+    width: 100%;
+    max-width: 600px; /* Ограничиваем максимальный размер холста для планшетов */
+    height: auto;
+}

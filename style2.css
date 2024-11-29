@@ -1,0 +1,50 @@
+body {
+    background-color: #1a1a1a; /* Темный фон */
+    color: #ff4d4d; /* Красный цвет шрифта */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    padding: 20px; /* Добавляем отступ для улучшенного восприятия */
+}
+
+#love-message {
+    font-size: 20px; /* Размер текста */
+    text-align: center;
+    max-width: 85%; /* Ограничиваем ширину текста */
+    margin: 20px 0;
+    word-wrap: break-word; /* Разрешаем перенос слов */
+    line-height: 1.5; /* Увеличиваем межстрочный интервал для лучшей читаемости */
+}
+
+/* Адаптивные стили для устройств с маленькой высотой экрана */
+@media (max-height: 800px) {
+    #love-message {
+        font-size: 18px; /* Дополнительно уменьшаем размер текста для экономии места */
+    }
+}
+
+canvas {
+    width: 100%;
+    max-width: 800px; /* Ограничиваем максимальный размер холста для планшетов */
+    height: auto;
+}
+
+#signature {
+    position: fixed; /* Закрепляет элемент на экране */
+    bottom: 20px; /* Отступ снизу */
+    right: 20px; /* Отступ справа */
+    font-size: 28px; /* Увеличенный размер текста подписи */
+    color: #ff4d4d; /* Цвет подписи, совпадает с цветом текста */
+    font-family: Arial, sans-serif;
+    font-weight: bold; /* Делает подпись жирной */
+    opacity: 1; /* Убираем прозрачность, чтобы подпись была более заметной */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Добавляем тень для большей видимости */
+    border-bottom: 2px solid #ff4d4d; /* Добавляем подчеркивание с использованием border */
+    padding-bottom: 2px; /* Добавляем отступ для подчеркивания */
+}
